@@ -21,7 +21,7 @@ def edit_carwashes() -> None:
     editor.save_all_data_to_json('data/test_data_new.json')
 
 
-def create_new_carwash() -> dict:
+def create_new_carwash() -> None:
     input_data = load()
     constructor = CarwashConstructor(input_data)
 

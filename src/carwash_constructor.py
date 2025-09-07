@@ -10,14 +10,20 @@ class CarwashConstructor:
         self.input_data = input_data
 
     @staticmethod
-    def _camel_to_snake(input_string: str):
+    def _str_to_snake_case(input_string: str) -> str:
+        """
+        Refactor any string into snake_case.
+
+        :param input_string: string to refactor
+        :return: snake_cased string
+        """
         input_string = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', input_string)
         return re.sub('([a-z0-9])([A-Z])', r'\1_\2', input_string).lower()
 
     @staticmethod
-    def _update_prices(component):
+    def _update_prices(component: dict) -> dict:
         """
-        Update price component with random service amount.
+        Assign random service price for a given PriceComponent.
         """
         return {
             key: {
@@ -27,19 +33,13 @@ class CarwashConstructor:
             for key, value in component.items()
         }
 
-    def _convert_keys_to_snake_case_recursive(self, data):
+    def _convert_keys_to_snake_case_recursive(self, data: dict | list) -> dict | list:
         """
-        Recursively convert all dictionary keys to snake case.
-
-        Args:
-            data: The data structure to process (dict, list, or primitive)
-
-        Returns:
-            Data structure with all keys converted to snake_case
+        Recursively convert all dictionary keys (nested included) to snake_case.
         """
         if isinstance(data, dict):
             return {
-                self._camel_to_snake(key): self._convert_keys_to_snake_case_recursive(value)
+                self._str_to_snake_case(key): self._convert_keys_to_snake_case_recursive(value)
                 for key, value in data.items()
             }
         elif isinstance(data, list):
@@ -53,24 +53,22 @@ class CarwashConstructor:
     @staticmethod
     def append_to_existing_json(path: str, carwash: dict) -> None:
         """
-        Append the newly created carwash to an existing JSON file.
+        Append the newly created carwash to an existing JSON file with other carwashes.
         """
         try:
-            # Load existing data
+            # load existing data
             with open(path, 'r', encoding='utf-8') as f:
                 existing_data = json.load(f)
 
-            # Append new carwash
             existing_data.append(carwash)
 
-            # Save back to file
             with open(path, 'w', encoding='utf-8') as f:
                 json.dump(existing_data, f, indent=2, ensure_ascii=False)
 
-            print(f"Appended new carwash to {path}. Total carwashes: {len(existing_data)}")
+            print(f"appended new carwash to {path}. total carwashes: {len(existing_data)}")
 
         except Exception as e:
-            print(f'Failed to append carwash to {path}: {e}')
+            print(f'failed to append carwash to {path}: {e}')
 
     def create_new_carwash(self) -> dict:
         """
@@ -79,7 +77,6 @@ class CarwashConstructor:
         now = datetime.now(timezone.utc).isoformat()
         source = self.input_data[0]
 
-        # Create initial carwash structure with original keys
         carwash = {
             '_id': uuid4().hex,
             'carwash_id': uuid4().hex,
@@ -108,5 +105,5 @@ class CarwashConstructor:
             ]
         }
 
-        # Convert ALL keys to snake case recursively (including nested ones)
+        # convert ALL keys to snake case recursively (including nested keys)
         return self._convert_keys_to_snake_case_recursive(carwash)

@@ -7,10 +7,10 @@ class CaseInsensitiveDict(dict):
         self.proxy = {}
         for key, value in data.items():
             # Сохраняем оригинальный ключ для proxy
-            lower_key = key.lower()
-            if lower_key in self.proxy:
+            lowercase_key = key.lower()
+            if lowercase_key in self.proxy:
                 raise ValueError(f"Duplicate key: {key} (case-insensitive)")
-            self.proxy[lower_key] = key
+            self.proxy[lowercase_key] = key
 
             # Рекурсивно преобразуем вложенные словари и списки
             if isinstance(value, dict):
@@ -56,36 +56,36 @@ class CaseInsensitiveDict(dict):
                 result.append(item)
         return result
 
-    def __contains__(self, k):
-        return k.lower() in self.proxy
+    def __contains__(self, key):
+        return key.lower() in self.proxy
 
-    def __getitem__(self, k):
-        key = self.proxy[k.lower()]
+    def __getitem__(self, key):
+        key = self.proxy[key.lower()]
         return super().__getitem__(key)
 
-    def get(self, k, default=None):
-        return self[k] if k in self else default
+    def get(self, key, default=None):
+        return self[key] if key in self else default
 
-    def __setitem__(self, k, v):
+    def __setitem__(self, key, value):
         # Преобразуем значение если это dict
-        if isinstance(v, dict):
-            v = CaseInsensitiveDict(v)
-        elif isinstance(v, list):
-            v = self._convert_list(v)
+        if isinstance(value, dict):
+            value = CaseInsensitiveDict(value)
+        elif isinstance(value, list):
+            value = self._convert_list(value)
 
-        lower_k = k.lower()
-        if lower_k in self.proxy:
+        lowercase_key = key.lower()
+        if lowercase_key in self.proxy:
             # Обновляем существующий ключ
-            original_key = self.proxy[lower_k]
-            super().__setitem__(original_key, v)
+            original_key = self.proxy[lowercase_key]
+            super().__setitem__(original_key, value)
         else:
             # Добавляем новый ключ
-            self.proxy[lower_k] = k
-            super().__setitem__(k, v)
+            self.proxy[lowercase_key] = key
+            super().__setitem__(key, value)
 
-    def __delitem__(self, k):
-        lower_k = k.lower()
-        if lower_k in self.proxy:
-            key = self.proxy[lower_k]
+    def __delitem__(self, key):
+        lowercase_key = key.lower()
+        if lowercase_key in self.proxy:
+            key = self.proxy[lowercase_key]
             super().__delitem__(key)
-            del self.proxy[lower_k]
+            del self.proxy[lowercase_key]
