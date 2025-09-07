@@ -22,9 +22,9 @@ class Tariff(BaseModel):
     Name: str
     Description: str
     PriceElements: list[PriceElement]
-    IncludeService: list[str]
-    AdditionService: list[str]
-    DurationMinutes: dict[str, int]
+    # IncludeService: list[str]
+    # AdditionService: list[str]
+    # DurationMinutes: dict[str, int]
 
 
 class CarWashData(BaseModel):
