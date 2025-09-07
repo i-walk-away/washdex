@@ -1,0 +1,4747 @@
+[{
+    "_id": "41be08c30ca04166b40e4cbc26cad252",
+    "carwash_id": "1a9bdd124a2c49a18847d6e91dd29699",
+    "network_id": "3a81c491fa9245dc9139049f9885ef57",
+    "DateCreate": {
+      "$date": "2024-07-17T11:12:55.648Z"
+    },
+    "StartDateTime": {
+      "$date": "2024-07-17T11:12:55.648Z"
+    },
+    "EndDateTime": {
+      "$date": "2024-10-04T14:40:42.675Z"
+    },
+    "Tariffs": [
+      {
+        "_id": "express",
+        "Name": "Экспресс",
+        "Description": "Тариф Экспресс",
+        "PriceElements": [
+          {
+            "Id": "4dd017faca644b9bb8ab92010111b0e7",
+            "StartTime": {
+              "Hours": 0,
+              "Minutes": 0
+            },
+            "EndTime": {
+              "Hours": 0,
+              "Minutes": 0
+            },
+            "ClientGroup": [
+              "Taxi",
+              "Corporation",
+              "Individual"
+            ],
+            "PriceComponent": {
+              "Mini": {
+                "IncludeServiceAmount": 100,
+                "AdditionalServiceAmounts": {
+                  "washing_car_carpets": 500,
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "drying_car": 400,
+                  "wax_coating": 400
+                }
+              },
+              "Compact": {
+                "IncludeServiceAmount": 200,
+                "AdditionalServiceAmounts": {
+                  "washing_car_carpets": 500,
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "drying_car": 400,
+                  "wax_coating": 400
+                }
+              },
+              "MiddleSize": {
+                "IncludeServiceAmount": 300,
+                "AdditionalServiceAmounts": {
+                  "washing_car_carpets": 500,
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "drying_car": 400,
+                  "wax_coating": 400
+                }
+              },
+              "Crossover": {
+                "IncludeServiceAmount": 400,
+                "AdditionalServiceAmounts": {
+                  "washing_car_carpets": 500,
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "drying_car": 400,
+                  "wax_coating": 400
+                }
+              },
+              "OffRoad": {
+                "IncludeServiceAmount": 500,
+                "AdditionalServiceAmounts": {
+                  "washing_car_carpets": 500,
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "drying_car": 400,
+                  "wax_coating": 400
+                }
+              },
+              "MicroBus": {
+                "IncludeServiceAmount": 600,
+                "AdditionalServiceAmounts": {
+                  "washing_car_carpets": 500,
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "drying_car": 400,
+                  "wax_coating": 400
+                }
+              }
+            }
+          }
+        ],
+        "IncludeService": [
+          "washing_car_body"
+        ],
+        "AdditionService": [
+          "washing_car_carpets",
+          "vacuuming_car_back",
+          "blacking_wheels",
+          "drying_car",
+          "wax_coating"
+        ],
+        "DurationMinutes": {
+          "Mini": 20,
+          "Compact": 30,
+          "MiddleSize": 35,
+          "Crossover": 40,
+          "OffRoad": 45,
+          "MicroBus": 50
+        }
+      },
+      {
+        "_id": "complex",
+        "Name": "Комплекс",
+        "Description": "Тариф Комплекс",
+        "PriceElements": [
+          {
+            "Id": "13a63d7f82b34d229db7aa8c89a0e428",
+            "StartTime": {
+              "Hours": 0,
+              "Minutes": 0
+            },
+            "EndTime": {
+              "Hours": 0,
+              "Minutes": 0
+            },
+            "ClientGroup": [
+              "Taxi",
+              "Corporation",
+              "Individual"
+            ],
+            "PriceComponent": {
+              "Mini": {
+                "IncludeServiceAmount": 700,
+                "AdditionalServiceAmounts": {
+                  "wax_coating": 400,
+                  "weat_cleaning_salon": 450,
+                  "сlean_wipe_windows": 350,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              },
+              "Compact": {
+                "IncludeServiceAmount": 800,
+                "AdditionalServiceAmounts": {
+                  "wax_coating": 400,
+                  "weat_cleaning_salon": 450,
+                  "сlean_wipe_windows": 350,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              },
+              "MiddleSize": {
+                "IncludeServiceAmount": 900,
+                "AdditionalServiceAmounts": {
+                  "wax_coating": 400,
+                  "weat_cleaning_salon": 450,
+                  "сlean_wipe_windows": 350,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              },
+              "Crossover": {
+                "IncludeServiceAmount": 1000,
+                "AdditionalServiceAmounts": {
+                  "wax_coating": 400,
+                  "weat_cleaning_salon": 450,
+                  "сlean_wipe_windows": 350,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              },
+              "OffRoad": {
+                "IncludeServiceAmount": 1100,
+                "AdditionalServiceAmounts": {
+                  "wax_coating": 400,
+                  "weat_cleaning_salon": 450,
+                  "сlean_wipe_windows": 350,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              },
+              "MicroBus": {
+                "IncludeServiceAmount": 1200,
+                "AdditionalServiceAmounts": {
+                  "wax_coating": 400,
+                  "weat_cleaning_salon": 450,
+                  "сlean_wipe_windows": 350,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              }
+            }
+          }
+        ],
+        "IncludeService": [
+          "washing_car_carpets",
+          "drying_car",
+          "car_body_rinsing",
+          "vacuuming_car_salon",
+          "washing_car_body"
+        ],
+        "AdditionService": [
+          "wax_coating",
+          "weat_cleaning_salon",
+          "сlean_wipe_windows",
+          "anti_rain_coating",
+          "skin_conditioner",
+          "polishing_interior_panels"
+        ],
+        "DurationMinutes": {
+          "Mini": 55,
+          "Compact": 65,
+          "MiddleSize": 70,
+          "Crossover": 75,
+          "OffRoad": 80,
+          "MicroBus": 85
+        }
+      },
+      {
+        "_id": "maximum",
+        "Name": "Максимум",
+        "Description": "Тариф Максимум",
+        "PriceElements": [
+          {
+            "Id": "508ef3032a3d4045b7fe00a0e2410f06",
+            "StartTime": {
+              "Hours": 0,
+              "Minutes": 0
+            },
+            "EndTime": {
+              "Hours": 0,
+              "Minutes": 0
+            },
+            "ClientGroup": [
+              "Taxi",
+              "Corporation",
+              "Individual"
+            ],
+            "PriceComponent": {
+              "Mini": {
+                "IncludeServiceAmount": 1500,
+                "AdditionalServiceAmounts": {
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "wax_coating": 400,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              },
+              "Compact": {
+                "IncludeServiceAmount": 1700,
+                "AdditionalServiceAmounts": {
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "wax_coating": 400,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              },
+              "MiddleSize": {
+                "IncludeServiceAmount": 2000,
+                "AdditionalServiceAmounts": {
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "wax_coating": 400,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              },
+              "Crossover": {
+                "IncludeServiceAmount": 2500,
+                "AdditionalServiceAmounts": {
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "wax_coating": 400,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              },
+              "OffRoad": {
+                "IncludeServiceAmount": 2600,
+                "AdditionalServiceAmounts": {
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "wax_coating": 400,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              },
+              "MicroBus": {
+                "IncludeServiceAmount": 3500,
+                "AdditionalServiceAmounts": {
+                  "vacuuming_car_back": 100,
+                  "blacking_wheels": 50,
+                  "wax_coating": 400,
+                  "anti_rain_coating": 600,
+                  "skin_conditioner": 0,
+                  "polishing_interior_panels": 400
+                }
+              }
+            }
+          }
+        ],
+        "IncludeService": [
+          "washing_car_carpets",
+          "drying_car",
+          "weat_cleaning_salon",
+          "сlean_wipe_windows",
+          "car_body_rinsing",
+          "vacuuming_car_salon",
+          "washing_car_body"
+        ],
+        "AdditionService": [
+          "vacuuming_car_back",
+          "blacking_wheels",
+          "wax_coating",
+          "anti_rain_coating",
+          "skin_conditioner",
+          "polishing_interior_panels"
+        ],
+        "DurationMinutes": {
+          "Mini": 75,
+          "Compact": 85,
+          "MiddleSize": 90,
+          "Crossover": 95,
+          "OffRoad": 100,
+          "MicroBus": 105
+        }
+      }
+    ]
+  },
+  {
+    "_id": "c1b5e657f2004e9eb7816f922b9a273d",
+    "carwash_id": "1a9bdd124a2c49a18847d6e91dd29699",
+    "network_id": "3a81c491fa9245dc9139049f9885ef57",
+    "date_create": "2025-06-27T11:57:49.243696",
+    "start_date_time": "2025-06-27T11:57:49.243697",
+    "tariffs": [
+      {
+        "id": "express",
+        "name": "Экспресс",
+        "description": "Тариф Экспресс",
+        "priceElements": [
+          {
+            "id": "11fa95343e6c4b0eaababd855e13c12f",
+            "clientGroup": [
+              "Taxi",
+              "Corporation",
+              "Individual"
+            ],
+            "startTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "endTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "priceComponent": {
+              "Mini": {
+                "includeServiceAmount": 111,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "Compact": {
+                "includeServiceAmount": 222,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "MiddleSize": {
+                "includeServiceAmount": 333,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "Crossover": {
+                "includeServiceAmount": 444,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "OffRoad": {
+                "includeServiceAmount": 555,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "MicroBus": {
+                "includeServiceAmount": 666,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "includeService": [
+          "washing_car_body"
+        ],
+        "additionService": [
+          "washing_car_carpets",
+          "drying_car",
+          "vacuuming_car_back",
+          "blacking_wheels",
+          "wax_coating",
+          "silicone_rubber_seals",
+          "body_degreasing"
+        ],
+        "durationMinutes": {
+          "Mini": 20,
+          "Compact": 30,
+          "MiddleSize": 35,
+          "Crossover": 40,
+          "OffRoad": 50,
+          "MicroBus": 50
+        },
+        "active": true
+      },
+      {
+        "id": "complex",
+        "name": "Стандарт",
+        "description": "Тариф Стандарт",
+        "priceElements": [
+          {
+            "id": "3fd9f0a7454e46d89086e2cee256f409",
+            "clientGroup": [
+              "Taxi",
+              "Corporation",
+              "Individual"
+            ],
+            "startTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "endTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "priceComponent": {
+              "Mini": {
+                "includeServiceAmount": 700,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "Compact": {
+                "includeServiceAmount": 800,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "MiddleSize": {
+                "includeServiceAmount": 900,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "Crossover": {
+                "includeServiceAmount": 1000,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "OffRoad": {
+                "includeServiceAmount": 1100,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "MicroBus": {
+                "includeServiceAmount": 1200,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "includeService": [
+          "washing_car_carpets",
+          "drying_car",
+          "weat_cleaning_salon",
+          "car_body_rinsing"
+        ],
+        "additionService": [
+          "vacuuming_car_back",
+          "blacking_wheels",
+          "wax_coating",
+          "silicone_rubber_seals",
+          "anti_rain_coating",
+          "сlean_wipe_windows",
+          "body_degreasing",
+          "vacuuming_car_salon",
+          "skin_conditioner",
+          "washing_car_body",
+          "polishing_interior_panels"
+        ],
+        "durationMinutes": {
+          "Mini": 30,
+          "Compact": 40,
+          "MiddleSize": 45,
+          "Crossover": 50,
+          "OffRoad": 55,
+          "MicroBus": 60
+        },
+        "active": true
+      },
+      {
+        "id": "maximum",
+        "name": "Комплекс",
+        "description": "Тариф Комплекс",
+        "priceElements": [
+          {
+            "id": "e6cfe3b99261443c942d20e31382bc0c",
+            "clientGroup": [
+              "Taxi",
+              "Corporation",
+              "Individual"
+            ],
+            "startTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "endTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "priceComponent": {
+              "Mini": {
+                "includeServiceAmount": 1301,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "Compact": {
+                "includeServiceAmount": 1400,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "MiddleSize": {
+                "includeServiceAmount": 1500,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "Crossover": {
+                "includeServiceAmount": 1600,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "OffRoad": {
+                "includeServiceAmount": 1700,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              },
+              "MicroBus": {
+                "includeServiceAmount": 1800,
+                "additionalServiceAmounts": {
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "includeService": [
+          "washing_car_carpets",
+          "drying_car",
+          "сlean_wipe_windows",
+          "car_body_rinsing",
+          "vacuuming_car_salon",
+          "washing_car_body"
+        ],
+        "additionService": [
+          "vacuuming_car_back",
+          "blacking_wheels",
+          "wax_coating",
+          "silicone_rubber_seals",
+          "weat_cleaning_salon",
+          "anti_rain_coating",
+          "body_degreasing",
+          "skin_conditioner",
+          "polishing_interior_panels"
+        ],
+        "durationMinutes": {
+          "Mini": 65,
+          "Compact": 75,
+          "MiddleSize": 80,
+          "Crossover": 85,
+          "OffRoad": 90,
+          "MicroBus": 95
+        },
+        "active": true
+      }
+    ],
+    "endDateTime": null
+  },
+  {
+    "_id": "510cbeb7e1924760aeb37ff000725020",
+    "carwash_id": "1a9bdd124a2c49a18847d6e91dd29699",
+    "network_id": "3a81c491fa9245dc9139049f9885ef57",
+    "date_create": {
+      "$date": "2025-08-11T13:33:09.459Z"
+    },
+    "start_date_time": {
+      "$date": "2025-08-11T13:33:09.459Z"
+    },
+    "tariffs": [
+      {
+        "id": "express",
+        "name": "Экспресс",
+        "description": "Тариф Экспресс",
+        "priceElements": [
+          {
+            "id": "d3d20626f2a24aa586ee49147ef3243c",
+            "clientGroup": [
+              "Taxi",
+              "Corporation",
+              "Individual"
+            ],
+            "startTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "endTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "priceComponent": {
+              "Mini": {
+                "includeServiceAmount": 101,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 20000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 100
+                  }
+                }
+              },
+              "Compact": {
+                "includeServiceAmount": 200,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 199
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 25000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 150
+                  }
+                }
+              },
+              "MiddleSize": {
+                "includeServiceAmount": 300,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 30000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 200
+                  }
+                }
+              },
+              "Crossover": {
+                "includeServiceAmount": 400,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 40000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 250
+                  }
+                }
+              },
+              "OffRoad": {
+                "includeServiceAmount": 500,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 500
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 50000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 300
+                  }
+                }
+              },
+              "MicroBus": {
+                "includeServiceAmount": 600,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 600
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 60000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 350
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "includeService": [
+          "washing_car_body"
+        ],
+        "additionService": [
+          "washing_car_carpets",
+          "drying_car",
+          "vacuuming_car_back",
+          "blacking_wheels",
+          "wax_coating",
+          "silicone_rubber_seals",
+          "body_degreasing"
+        ],
+        "durationMinutes": {
+          "Mini": 20,
+          "Compact": 30,
+          "MiddleSize": 35,
+          "Crossover": 40,
+          "OffRoad": 45,
+          "MicroBus": 50
+        },
+        "active": true
+      },
+      {
+        "id": "complex",
+        "name": "Комплекс",
+        "description": "Тариф Комплекс",
+        "priceElements": [
+          {
+            "id": "ac409384770144eab512f37f2fdd0e63",
+            "clientGroup": [
+              "Taxi",
+              "Corporation",
+              "Individual"
+            ],
+            "startTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "endTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "priceComponent": {
+              "Mini": {
+                "includeServiceAmount": 1300,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 20000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 100
+                  }
+                }
+              },
+              "Compact": {
+                "includeServiceAmount": 1400,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 199
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 25000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 150
+                  }
+                }
+              },
+              "MiddleSize": {
+                "includeServiceAmount": 1500,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 30000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 200
+                  }
+                }
+              },
+              "Crossover": {
+                "includeServiceAmount": 1600,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 40000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 250
+                  }
+                }
+              },
+              "OffRoad": {
+                "includeServiceAmount": 1700,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 500
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 50000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 300
+                  }
+                }
+              },
+              "MicroBus": {
+                "includeServiceAmount": 1800,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 600
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 60000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 350
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "includeService": [
+          "washing_car_carpets",
+          "drying_car",
+          "сlean_wipe_windows",
+          "car_body_rinsing",
+          "vacuuming_car_salon",
+          "washing_car_body"
+        ],
+        "additionService": [
+          "vacuuming_car_back",
+          "blacking_wheels",
+          "wax_coating",
+          "silicone_rubber_seals",
+          "weat_cleaning_salon",
+          "anti_rain_coating",
+          "body_degreasing",
+          "skin_conditioner",
+          "polishing_interior_panels"
+        ],
+        "durationMinutes": {
+          "Mini": 65,
+          "Compact": 75,
+          "MiddleSize": 80,
+          "Crossover": 85,
+          "OffRoad": 90,
+          "MicroBus": 95
+        },
+        "active": true
+      },
+      {
+        "id": "standart",
+        "name": "Стандарт",
+        "description": "Тариф Стандарт",
+        "priceElements": [
+          {
+            "id": "653c4ef56d60479dba5988009300a6d8",
+            "clientGroup": [
+              "Taxi",
+              "Corporation",
+              "Individual"
+            ],
+            "startTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "endTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "priceComponent": {
+              "Mini": {
+                "includeServiceAmount": 700,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 20000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 100
+                  }
+                }
+              },
+              "Compact": {
+                "includeServiceAmount": 800,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 199
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 25000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 150
+                  }
+                }
+              },
+              "MiddleSize": {
+                "includeServiceAmount": 900,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 30000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 200
+                  }
+                }
+              },
+              "Crossover": {
+                "includeServiceAmount": 1000,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 40000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 250
+                  }
+                }
+              },
+              "OffRoad": {
+                "includeServiceAmount": 1100,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 500
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 50000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 300
+                  }
+                }
+              },
+              "MicroBus": {
+                "includeServiceAmount": 1200,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 600
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 60000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 350
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "includeService": [
+          "washing_car_carpets",
+          "drying_car",
+          "weat_cleaning_salon",
+          "car_body_rinsing"
+        ],
+        "additionService": [
+          "vacuuming_car_back",
+          "blacking_wheels",
+          "wax_coating",
+          "silicone_rubber_seals",
+          "anti_rain_coating",
+          "сlean_wipe_windows",
+          "body_degreasing",
+          "vacuuming_car_salon",
+          "skin_conditioner",
+          "washing_car_body",
+          "polishing_interior_panels"
+        ],
+        "durationMinutes": {
+          "Mini": 30,
+          "Compact": 40,
+          "MiddleSize": 45,
+          "Crossover": 50,
+          "OffRoad": 55,
+          "MicroBus": 60
+        },
+        "active": true
+      },
+      {
+        "id": "complex_plus",
+        "name": "Комплекс +",
+        "description": "",
+        "priceElements": [
+          {
+            "id": "e95eb73c0a064b8b9a6745fefc362417",
+            "clientGroup": [
+              "Taxi",
+              "Corporation",
+              "Individual"
+            ],
+            "startTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "endTime": {
+              "hours": 0,
+              "minutes": 0
+            },
+            "priceComponent": {
+              "Mini": {
+                "includeServiceAmount": 0,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 20000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 100
+                  }
+                }
+              },
+              "Compact": {
+                "includeServiceAmount": 0,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 200
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 199
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 25000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 150
+                  }
+                }
+              },
+              "MiddleSize": {
+                "includeServiceAmount": 0,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 30000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 200
+                  }
+                }
+              },
+              "Crossover": {
+                "includeServiceAmount": 0,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 300
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 40000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 250
+                  }
+                }
+              },
+              "OffRoad": {
+                "includeServiceAmount": 0,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 500
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 50000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 300
+                  }
+                }
+              },
+              "MicroBus": {
+                "includeServiceAmount": 0,
+                "additionalServiceAmounts": {
+                  "washing_car_carpets": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "drying_car": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_back": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "blacking_wheels": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "washing_car_body": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "vacuuming_car_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "weat_cleaning_salon": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "skin_conditioner": {
+                    "active": true,
+                    "price": 400
+                  },
+                  "anti_rain_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "wax_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сlean_wipe_windows": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "car_body_rinsing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_interior_panels": {
+                    "active": true,
+                    "price": 600
+                  },
+                  "body_degreasing": {
+                    "active": true,
+                    "price": 100
+                  },
+                  "silicone_rubber_seals": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_one_seat": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "dry_cleaning_of_affordable_carpet": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "ceiling_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "plastic_recovery": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_of_one_car_element": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polishing_the_entire_body": {
+                    "active": true,
+                    "price": 60000
+                  },
+                  "сeramic_coating_1_layer": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_2_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сeramic_coating_3_layers": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "polymer_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "quartz_coating": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "сar_bottom_washing": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "radiator_cleaning": {
+                    "active": false,
+                    "price": 0
+                  },
+                  "air_ozonation": {
+                    "active": true,
+                    "price": 350
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "includeService": [
+          "washing_car_carpets",
+          "drying_car",
+          "vacuuming_car_back",
+          "wax_coating",
+          "weat_cleaning_salon",
+          "сlean_wipe_windows",
+          "car_body_rinsing",
+          "body_degreasing",
+          "radiator_cleaning",
+          "vacuuming_car_salon",
+          "washing_car_body"
+        ],
+        "additionService": [
+          "blacking_wheels",
+          "silicone_rubber_seals",
+          "anti_rain_coating",
+          "polymer_coating",
+          "quartz_coating",
+          "skin_conditioner",
+          "сar_bottom_washing",
+          "polishing_interior_panels",
+          "air_ozonation",
+          "dry_cleaning_of_one_seat",
+          "dry_cleaning_of_affordable_carpet",
+          "ceiling_cleaning",
+          "plastic_recovery",
+          "polishing_of_one_car_element",
+          "сeramic_coating_1_layer",
+          "сeramic_coating_2_layers",
+          "сeramic_coating_3_layers",
+          "polishing_the_entire_body"
+        ],
+        "durationMinutes": {
+          "Mini": 105,
+          "Compact": 125,
+          "MiddleSize": 135,
+          "Crossover": 145,
+          "OffRoad": 155,
+          "MicroBus": 165
+        },
+        "active": true
+      }
+    ],
+    "endDateTime": null
+  }
+]
