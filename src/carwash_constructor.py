@@ -51,13 +51,26 @@ class CarwashConstructor:
             return data
 
     @staticmethod
-    def save_carwash_to_json(path: str, carwash: dict):
-        with open(path, 'w', encoding='utf-8') as f:
-            try:
-                json.dump(carwash, f, indent=2, ensure_ascii=False)
-                print('new carwash object saved with success')
-            except Exception as e:
-                print(f'failed to save new carwash object: {e}')
+    def append_to_existing_json(path: str, carwash: dict) -> None:
+        """
+        Append the newly created carwash to an existing JSON file.
+        """
+        try:
+            # Load existing data
+            with open(path, 'r', encoding='utf-8') as f:
+                existing_data = json.load(f)
+
+            # Append new carwash
+            existing_data.append(carwash)
+
+            # Save back to file
+            with open(path, 'w', encoding='utf-8') as f:
+                json.dump(existing_data, f, indent=2, ensure_ascii=False)
+
+            print(f"Appended new carwash to {path}. Total carwashes: {len(existing_data)}")
+
+        except Exception as e:
+            print(f'Failed to append carwash to {path}: {e}')
 
     def create_new_carwash(self) -> dict:
         """

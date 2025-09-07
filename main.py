@@ -10,7 +10,7 @@ def load() -> list[dict]:
         return test_data
 
 
-def edit_carwashes():
+def edit_carwashes() -> None:
     input_data = load()
     editor = CarwashEditor(input_data)
 
@@ -21,16 +21,20 @@ def edit_carwashes():
     editor.save_all_data_to_json('data/test_data_new.json')
 
 
-def create_new_carwash():
+def create_new_carwash() -> dict:
     input_data = load()
     constructor = CarwashConstructor(input_data)
 
     new_carwash = constructor.create_new_carwash()
-    constructor.save_carwash_to_json('data/new_carwash.json', new_carwash)
+
+    constructor.append_to_existing_json('data/test_data_new.json', new_carwash)
 
 
 def main() -> None:
+    # edit existing carwashes and save to test_data_new.json
     edit_carwashes()
+
+    # create new carwash
     create_new_carwash()
 
 
