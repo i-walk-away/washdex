@@ -74,7 +74,7 @@ class CarwashConstructor:
         """
         Create a new carwash object with all keys in snake_case.
         """
-        now = datetime.now(timezone.utc).isoformat()
+        now = datetime.now(timezone.utc).isoformat(timespec='milliseconds')
         source = self.input_data[0]
 
         carwash = {
