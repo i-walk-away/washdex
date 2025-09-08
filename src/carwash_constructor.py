@@ -79,8 +79,8 @@ class CarwashConstructor:
 
         carwash = {
             '_id': uuid4().hex,
-            'carwash_id': uuid4().hex,
-            'network_id': uuid4().hex,
+            'carwash_id': source['carwash_id'],
+            'network_id': source['network_id'],
             'date_create': {'$date': now},
             'start_date_time': {'$date': now},
             'end_date_time': None,
